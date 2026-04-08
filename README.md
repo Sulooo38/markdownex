@@ -18,3 +18,10 @@ git clone https://github.com/yourname/velox-api.git
 cd velox-api
 pip install -r requirements.txt
 uvicorn app.main:app --reload
+velox-api/
+├── app/
+│   ├── main.py        # Entry point
+│   ├── routers/       # Route definitions
+│   ├── models/        # Database models
+│   ├── schemas/       # Pydantic schemas
+├── requirements.txt
