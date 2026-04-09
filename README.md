@@ -1,58 +1,47 @@
-Velox API
-A lightweight REST API built with FastAPI
+# Velox API
 
-!Python 3.11+
-!FastAPI 0.111
-!License MIT
+**A lightweight REST API built with FastAPI**
 
----
-
-A minimal REST API for user authentication and resource management. No unnecessary dependencies, no bloat.
-
-Installation
-git clone https://github.com/yourname/velox-api.git
-cd velox-api
-pip install -r requirements.txt
-uvicorn app.main:app --reload
-
-
-API runs at http://localhost:8000 · Docs at /docs
-
-Endpoints
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | /auth/login | Obtain JWT token |
-| GET | /users/me | Get current user |
-| GET | /items/{id} | Retrieve item |
-| POST | /items | Create item |
-
-Project Structure
-Velox API
-A lightweight REST API built with FastAPI
-
-!Python 3.11+
-!FastAPI 0.111
-!License MIT
+![Python 3.11+](https://img.shields.io/badge/🐍%20Python-3.11%2B-blue)
+![FastAPI 0.111](https://img.shields.io/badge/✅%20FastAPI-0.111-green)
+![License MIT](https://img.shields.io/badge/License-MIT-red)
 
 ---
 
 A minimal REST API for user authentication and resource management. No unnecessary dependencies, no bloat.
 
-Installation
+## Installation
+
+```bash
 git clone https://github.com/yourname/velox-api.git
 cd velox-api
 pip install -r requirements.txt
 uvicorn app.main:app --reload
+```
 
+API runs at `http://localhost:8000` · Docs at `/docs`
 
-API runs at http://localhost:8000 · Docs at /docs
+## Endpoints
 
-Endpoints
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| POST | /auth/login | Obtain JWT token |
-| GET | /users/me | Get current user |
-| GET | /items/{id} | Retrieve item |
-| POST | /items | Create item |
+| POST | `/auth/login` | Obtain JWT token |
+| GET | `/users/me` | Get current user |
+| GET | `/items/{id}` | Retrieve item |
+| POST | `/items` | Create item |
 
-Project Structure
+## Project Structure
+
+```
+velox-api/
+├── app/
+│   ├── main.py          # Entry point
+│   ├── routers/         # Route definitions
+│   ├── models/          # Database models
+│   └── schemas/         # Pydantic schemas
+└── requirements.txt
+```
+
+## Contributing
+
+Fork → branch → commit → pull request. Issues welcome.
